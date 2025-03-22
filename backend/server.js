@@ -21,6 +21,6 @@ mongoose
   })
   .catch((err) => console.log(err));
 
-app.use(('/api/projects', projectRoute));
+app.use('/api/projects', projectRoute);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
